@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Week</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-header__top d-flex justify-content-center">
+                <h1 class="site-header__title mt-5 ">Haftalik Namoz vaqtlari</h1>
+            </div>
+            <div class="site-header__bottom">
+            </div>
+        </div>
+    </header>
+    <main class="site-main">
+        <section class="site-main__hero hero">
+            <div class="container">
+                <div class="hero__tabel-wrap">
+                    <h2 class="hero__tabel-title js-tabel-title  fs-6">Farg'ona viloyati taqvimi</h2>
+                    <table class="hero__tabel  m-auto">
+                        <thead>
+                            <tr class="hero__tabel-tr">
+                                <th class="hero__tabel-th default">Vaqtlar</th>
+                                <td class="hero__tabel-td default">bomdod</td>
+                                <td class="hero__tabel-td default">peshin</td>
+                                <td class="hero__tabel-td default">asr</td>
+                                <td class="hero__tabel-td default" >shom</td>
+                                <td class="hero__tabel-td default">xufton</td>
+                                <td class="hero__tabel-td default">Sana</td>
+                            </tr>
+                        </thead>
+                        <tbody class="hero__table-body">
+                           
+                        </tbody>
+                    </table>
+                    <template class="hero__tabel-template">
+                        <tr class="hero__tabel-tr">
+                            <th class="hero__tabel-th weekday"></th>
+                            <td class="hero__tabel-td bomdod"></td>
+                            <td class="hero__tabel-td peshin"></td>
+                            <td class="hero__tabel-td asr"></td>
+                            <td class="hero__tabel-td shom" ></td>
+                            <td class="hero__tabel-td xufton"></td>
+                            <td class="hero__tabel-td date default  "></td>
+                        </tr>
+                    </template>
+                    <div class="hero__sellect-wrap d-flex gap-5 align-items-center flex-wrap mt-5 mb-3">   
+                        <select class="hero__sellect" name="regions">
+                            <option value="" selected disabled hidden>viloyatni tanlang</option>
+                            <option class="site-header__top-option" value="Farg'ona">Farg'ona</option>
+                            <option class="site-header__top-option" value="Toshkent">Toshkent</option>
+                            <option class="site-header__top-option" value="Samarqand">Samarqand</option>
+                            <option class="site-header__top-option" value="Namangan">Namangan</option>
+                            <option class="site-header__top-option" value="Andijon">Andijon</option>
+                            <option class="site-header__top-option" value="Qashqadaryo">Qashqadaryo</option>
+                            <option class="site-header__top-option" value="Surxondaryo">Surxondaryo</option>
+                            <option class="site-header__top-option" value="Jizzax">Jizzax</option>
+                            <option class="site-header__top-option" value="Buxoro">Buxoro</option>
+                            <option class="site-header__top-option" value="Navoiy">Navoiy</option>
+                            <option class="site-header__top-option" value="Xorazm">Xorazm</option>
+                            <option class="site-header__top-option" value="Sirdaryo">Sirdaryo</option>
+                        </select>
+                    </div>
+                    <div class="hero__btn-wrapper">
+                        <button class="hero__btn btn btn-success day" type="button">kunlikni</button>
+                        <button class="hero__btn btn btn-success week" type="button">Xaftalikni ko'rish</button>
+                        <button class="hero__btn btn btn-success month"  type="button">Oylik</button>
+                    </div>      
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/week.js"></script>
+</body>
+</html>

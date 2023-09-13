@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>month</title>
+</head>
+<body>
+    <header class="site-header d-flex">
+        <h1 class="hero__month-title d-inline-block m-auto mt-5 mb-3">Oylik taqvim</h1>
+    </header>
+    <main class="site-main">
+        <section class="site-main__hero hero">
+            <div class="container">
+                <div class="hero__time-list-wrap">
+                    <h2 class="hero__some-message"></h2>
+                    <ul class="hero__list d-flex justify-content-center w-75 js-list flex-wrap">
+                        <li class="text-center fs-3">Viloyatni, oyni va kunni kiriting va  << <span class="text-danger">Oylikni korish</span> >> tugmasini bosing  men szga taqvimni beraman<li>
+                    </ul>  
+                    
+                    <template class="js-template">
+                        <li class="hero__item d-flex flex-column js-item">
+                            <strong class="hero__item-name js-item-name bomdod">Tong saxarlik</strong>
+                            <time class="hero__item-time js-time bomdod-time" datetime="12:25">12:25</time>
+                        </li>
+                        <li class="hero__item d-flex flex-column js-item">
+                            <strong class="hero__item-name js-item-name peshin">Peshin</strong>
+                            <time class="hero__item-time js-time peshin-time" datetime="12:25">12:25</time>
+                        </li>
+                        <li class="hero__item d-flex flex-column js-item ">
+                            <strong class="hero__item-name js-item-name asr">Asr</strong>
+                            <time class="hero__item-time js-time asr-time" datetime="12:25">12:25</time>
+                        </li>
+                        <li class="hero__item d-flex flex-column js-item">
+                            <strong class="hero__item-name js-item-name shom">Shom</strong>
+                            <time class="hero__item-time js-time shom-time" datetime="12:25">12:25</time>
+                        </li>
+                        <li class="hero__item d-flex flex-column js-item">
+                            <strong class="hero__item-name js-item-name xufton">Xufton</strong>
+                            <time class="hero__item-time js-time xufton-time" datetime="12:25">12:25</time>
+                        </li>
+                    </template>
+                    
+                    <div class="hero__sellect-wrap d-flex gap-5 align-items-center flex-wrap mt-5 mb-3">   
+                        <select class="hero__sellect hero__sellect-region" name="regions">
+                            <option value="" selected disabled hidden>viloyatni tanlang</option>
+                            <option class="site-header__top-option" value="Farg'ona">Farg'ona</option>
+                            <option class="site-header__top-option" value="Toshkent">Toshkent</option>
+                            <option class="site-header__top-option" value="Samarqand">Samarqand</option>
+                            <option class="site-header__top-option" value="Namangan">Namangan</option>
+                            <option class="site-header__top-option" value="Andijon">Andijon</option>
+                            <option class="site-header__top-option" value="Qashqadaryo">Qashqadaryo</option>
+                            <option class="site-header__top-option" value="Surxondaryo">Surxondaryo</option>
+                            <option class="site-header__top-option" value="Jizzax">Jizzax</option>
+                            <option class="site-header__top-option" value="Buxoro">Buxoro</option>
+                            <option class="site-header__top-option" value="Navoiy">Navoiy</option>
+                            <option class="site-header__top-option" value="Xorazm">Xorazm</option>
+                            <option class="site-header__top-option" value="Sirdaryo">Sirdaryo</option>
+                        </select>
+                        <select class="hero__sellect hero__sellect-month" name="regions">
+                            <option value="0" selected disabled hidden>oyni tanlang</option>
+                            <option class="site-header__top-option" value="1">Yanvar</option>
+                            <option class="site-header__top-option" value="2">Fevral</option>
+                            <option class="site-header__top-option" value="3">Mart</option>
+                            <option class="site-header__top-option" value="4">Aprel</option>
+                            <option class="site-header__top-option" value="5">May</option>
+                            <option class="site-header__top-option" value="6">Iyun</option>
+                            <option class="site-header__top-option" value="7">Iyul</option>
+                            <option class="site-header__top-option" value="8">Avgust</option>
+                            <option class="site-header__top-option" value="9">Sentyabr</option>
+                            <option class="site-header__top-option" value="10">Oktyabr</option>
+                            <option class="site-header__top-option" value="11">Noyabr</option>
+                            <option class="site-header__top-option" value="12">Dekabr</option>
+                        </select>
+                        <select class="hero__sellect hero__sellect-day" name="regions">
+                            <option value="0" selected disabled hidden>kunni tanlang</option>
+                            <option class="site-header__top-option" value="1">1</option>
+                            <option class="site-header__top-option" value="2">2</option>
+                            <option class="site-header__top-option" value="3">3</option>
+                            <option class="site-header__top-option" value="4">4</option>
+                            <option class="site-header__top-option" value="5">5</option>
+                            <option class="site-header__top-option" value="6">6</option>
+                            <option class="site-header__top-option" value="7">7</option>
+                            <option class="site-header__top-option" value="8">8</option>
+                            <option class="site-header__top-option" value="9">9</option>
+                            <option class="site-header__top-option" value="10">10</option>
+                            <option class="site-header__top-option" value="11">11</option>
+                            <option class="site-header__top-option" value="12">12</option>
+                            <option class="site-header__top-option" value="13">13</option>
+                            <option class="site-header__top-option" value="14">14</option>
+                            <option class="site-header__top-option" value="15">15</option>
+                            <option class="site-header__top-option" value="16">16</option>
+                            <option class="site-header__top-option" value="17">17</option>
+                            <option class="site-header__top-option" value="18">18</option>
+                            <option class="site-header__top-option" value="19">9</option>
+                            <option class="site-header__top-option" value="20">20</option>
+                            <option class="site-header__top-option" value="21">21</option>
+                            <option class="site-header__top-option" value="22">22</option>
+                            <option class="site-header__top-option" value="23">23</option>
+                            <option class="site-header__top-option" value="24">24</option>
+                            <option class="site-header__top-option" value="25">25</option>
+                            <option class="site-header__top-option" value="26">26</option>
+                            <option class="site-header__top-option" value="27">27</option>
+                            <option class="site-header__top-option" value="28">28</option>
+                            <option class="site-header__top-option" value="29">29</option>
+                            <option class="site-header__top-option" value="30">30</option>
+                            <option class="site-header__top-option" value="31">31</option>
+                        </select>
+                    </div>
+                    <div class="hero__btn-wrapper">
+                        <button class="hero__btn btn btn-success day" type="button">kunlikni</button>
+                        <button class="hero__btn btn btn-success week" type="button">Xaftalik</button>
+                        <button class="hero__btn btn btn-success month"  type="button">Oylik ko'rish</button>
+                    </div>      
+                </div> 
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        
+    </footer>
+    
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/month.js"></script>
+</body>
+</html>
